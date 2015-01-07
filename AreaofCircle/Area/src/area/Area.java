@@ -6,7 +6,7 @@
 
 package area;
 import java.util.Scanner;
-import java.lang.Math;
+
 
 /**
  *
@@ -23,7 +23,14 @@ public class Area {
         Scanner input= new Scanner (System.in);
         System.out.print("Please enter redius : ");
         int radius= input.nextInt();
-         double PI= 3.14;
+        /**
+            final double is  constant variable
+        */
+         final  double PI= 3.14;
+         /**
+           Math pow  is the same  as doing  radius*=radius;
+         */
+         
          double area= Math.pow(radius,2) * PI;
          System.out.printf(" the area of an circle %s", area);
     }
