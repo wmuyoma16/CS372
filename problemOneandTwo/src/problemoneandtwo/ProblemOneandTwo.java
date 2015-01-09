@@ -17,6 +17,7 @@ public class ProblemOneandTwo {
      */
     public static void main(String[] args) {
       class DataOnly {
+      	//PT: normally classes are defined outside of functions. And usually in a separate file
 			int i;
 			float f;
 			boolean b;
