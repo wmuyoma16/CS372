@@ -18,7 +18,7 @@ public class ProblemFive {
      */
     public static void main(String[] args) {
       Random firstNum= new Random();
-        Random secondNum= new Random();
+        Random secondNum= new Random(); //PT: you can reuse firstNum for both values. This one isn't needed
         for( int i=0; i < 25; i++){
             /**
              * I am using random number ranger of 0-9
@@ -29,7 +29,7 @@ public class ProblemFive {
             if(firstR < secondR)
                 System.out.println( firstR +" < "+ secondR);
             else if(firstR == secondR)
-                  System.out.println( firstR +" < "+ secondR);
+                  System.out.println( firstR +" < "+ secondR); //PT + " == " + . -2
             else
                 System.out.println( firstR +" > "+ secondR);
         }
