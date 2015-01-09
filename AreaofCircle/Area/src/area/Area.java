@@ -26,7 +26,7 @@ public class Area {
         /**
             final double is  constant variable
         */
-         final  double PI= 3.14;
+         final  double PI= 3.14; //PT: use java.lang.Math.PI
          /**
            Math pow  is the same  as doing  radius*=radius;
          */
