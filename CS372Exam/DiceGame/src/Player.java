@@ -1,6 +1,3 @@
-
-import java.util.ArrayList;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,46 +9,36 @@ import java.util.ArrayList;
  * @author wmuyoma16
  */
 public class Player {
-       ArrayList<String> user = new ArrayList<>();
-
-    private String passWord;
-    private double money;
-    private int playerGuess;
-    private boolean player;
-    /**
+    private String passCode;
+    private int compGuess;
+    private  double money;
+    private int guess;
+    public Player(){
+        money= 500;
+    }
+    /** 
      * 
-     * @param pass this will allow player to log in
-     * @param guess  this will be the input of user's  guess
+     * @param pass  set pass
      */
-    public Player(String pass, int guess){
-        money=500;
-        passWord=pass;
-        playerGuess=guess;
-        
-        
+    public void setpassCode(String pass){
+        passCode= pass;
     }
     /**
      * 
-     * @return The value  of money  after player guess.
+     * @return  return the pass
      */
-    public double funds() {
-        if(playerGuess < 7){
+    public String getPassCode(){
+        return passCode;
+    }
+    public double calculateFund(){
+        if( guess < 7 && compGuess < 7){
             money+=money;
-        }
-        else if(playerGuess==7){
-            money-=money *4;
-        }
-        else{
+           }
+        else if(guess > 7 && compGuess > 7)
             money-=money;
-        }
-           
+        else
+            money*=4;
+        
         return money;
     }
-     public String addPlayer(String player){
-        for (String user1 : user) {
-            
-        }
-           return player;
-    }
-
 }
