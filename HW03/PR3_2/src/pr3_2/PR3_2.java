@@ -4,27 +4,19 @@
  * and open the template in the editor.
  */
 
-package pr3_1;
+package pr3_2;
 
 /**
  *
  * @author wmuyoma16
  */
-import java.util.Scanner;
-public class PR3_1 {
-   
+public class PR3_2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input= new Scanner(System.in);
-       int[] userInt= new int[10];
-       for (int i=0; i < 10; i++){
-           System.out.print("Enter inter:");
-           
-       }
-         
-   }
+        // TODO code application logic here
+    }
     
 }
